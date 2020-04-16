@@ -13,7 +13,7 @@ public enum SysMsgType {
      * system
      */
     SYSTEM("2", "enums.sys.msg.type.system"),
-
+    CUSTOMER("3", "enums.sys.msg.type.cus"),
     /**
      * user
      */
