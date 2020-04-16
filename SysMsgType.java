@@ -12,7 +12,8 @@ public enum SysMsgType {
     /**
      * system
      */
-    SYSTEM("1", "enums.sys.msg.type.system"),
+    SYSTEM("2", "enums.sys.msg.type.system"),
+
     /**
      * user
      */
