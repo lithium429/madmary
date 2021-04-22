@@ -1,1 +1,3 @@
 StackOverflowError
+SafeVarargs
+CharSequence
