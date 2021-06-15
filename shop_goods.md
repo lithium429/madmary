@@ -1,4 +1,4 @@
-###shop_goods商品表
+### shop_goods商品表
 ```java
     @Comment("ID")
     @ColDefine(type = ColType.VARCHAR, width = 32)
@@ -91,7 +91,7 @@
     @Default(value = "0")
     private boolean needInstallation;
     
-    /*******************以上是原生自营获取字段，以下是第三方货品新增字段**************************************/
+    /*******************以上是原生自营获取字段，以下是第三方商品品新增字段**************************************/
 
     @Comment("商品来源")
     @ColDefine(type = ColType.INT,width = 2)
@@ -123,7 +123,7 @@
 
 ```
 
-###shop_goods_product货品表/单品
+### shop_goods_product货品表/单品
 ```java
     @Comment("ID")
     @ColDefine(type = ColType.VARCHAR, width = 32)
@@ -234,8 +234,8 @@
     private Integer minNum;
 ```
 ---
-###goods/detail/{id}接口返回
-####自营商品
+### goods/detail/{id}接口返回
+#### 自营商品
 ```json
 {
   "code": 0,
@@ -352,7 +352,7 @@
 }
 
 ```
-####第三方货品 苏宁为例
+#### 第三方货品 苏宁为例
 ```json
 {
   "code": 0,
@@ -414,7 +414,7 @@
   }
 }
 ```
-####价格接口-列表或首页点击第三方商品进入详情页调用   
+#### 价格接口-列表或首页点击第三方商品进入详情页调用   
 进入详情页可能存在一个商品下多个货品，苏宁价格使用货品goodsProducts第一个货品sku   
 和supplierCode+区域名称进行查询
 ```json
