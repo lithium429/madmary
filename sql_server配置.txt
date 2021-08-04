@@ -1,0 +1,18 @@
+
+jdbc.mssql.type=druid
+jdbc.mssql.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+#jdbc.mssql.driver=net.sourceforge.jtds.jdbc.Driver
+jdbc.mssql.url=jdbc:sqlserver://localhost:1433;databaseName=master;
+jdbc.mssql.username=username
+jdbc.mssql.password=password
+jdbc.mssql.maxActive=10
+jdbc.mssql.maxIdle=10
+jdbc.mssql.minIdle=1
+jdbc.mssql.testWhileIdle=true
+
+
+
+####
+jdk11 删除java.serurity文件内容 jdk.tls.disabledAlgorithms TLS1 TLS1.1
+见
+https://asyncstream.com/tutorials/java-tlsv10-not-accepted-by-client-preferences/
